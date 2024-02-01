@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32002.185
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EDDS_to_DDS", "EDDS_to_DDS\EDDS_to_DDS.csproj", "{9B3F5BB8-DD40-4B66-9395-383EEF0D8A36}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EddsToDds", "src\EddsToDds.csproj", "{1BACC75F-4F1E-4822-B1F5-07F48ECBDA21}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{9B3F5BB8-DD40-4B66-9395-383EEF0D8A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9B3F5BB8-DD40-4B66-9395-383EEF0D8A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9B3F5BB8-DD40-4B66-9395-383EEF0D8A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9B3F5BB8-DD40-4B66-9395-383EEF0D8A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BACC75F-4F1E-4822-B1F5-07F48ECBDA21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BACC75F-4F1E-4822-B1F5-07F48ECBDA21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BACC75F-4F1E-4822-B1F5-07F48ECBDA21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BACC75F-4F1E-4822-B1F5-07F48ECBDA21}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
