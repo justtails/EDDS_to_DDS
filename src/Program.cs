@@ -1,23 +1,37 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using K4os.Compression.LZ4.Encoders;
 
-namespace EDDS_to_DDS
+namespace EddsToDds
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            if (File.Exists(args[0]))
+            try
             {
-                string ff = Path.GetExtension(args[0]);
-                OpenFile(args[0]);
+                switch (args[0])
+                {
+                    case "help":
+                        WriteHelp();
+                        break;
+                    default:
+                        OpenFile(args[0]);
+                        break;
+                }
+            }
+            catch
+            {
+                WriteHelp();
             }
         }
+
+        static void WriteHelp()
+        {
+            Console.WriteLine("EddsToDds [help | filepath] \n\n" +
+                                "help\t\tShow this help\n" +
+                                "filepath\tPath to edds file");
+        }
+
         static void OpenFile(string file)
         {
             List<int> copy_blocks = new List<int>();
