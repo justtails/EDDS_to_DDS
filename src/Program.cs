@@ -7,6 +7,14 @@ namespace EddsToDds
     {
         static void Main(string[] args)
         {
+            if (args.Length == 0 || !File.Exists(args[0]))
+            {
+                Console.WriteLine("File path is not specified or incorrect");
+                return;
+            }
+
+            if ()
+
             try
             {
                 switch (args[0])
@@ -25,9 +33,14 @@ namespace EddsToDds
             }
         }
 
+        static bool IsArgumentsExists(string[] args, int index, byte argsCount)
+        {
+            return (argsCount + index + 1) <= args.Length;
+        }
+
         static void WriteHelp()
         {
-            Console.WriteLine("EddsToDds [help | filepath] \n\n" +
+            Console.WriteLine("\nEddsToDds [help | filepath] \n\n" +
                                 "help\t\tShow this help\n" +
                                 "filepath\tPath to edds file");
         }
